@@ -1,0 +1,19 @@
+{
+  "name": "testing-javascript-jsdays17",
+  "version": "1.0.0",
+  "description": "Quelltexte für den Workshop \"Testing Javascript\" auf den Javascript Days 2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djungowski/testing-javascript-jsdays17.git"
+  },
+  "author": "Dominik Ehrenberg, Sebastian Springer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djungowski/testing-javascript-jsdays17/issues"
+  },
+  "homepage": "https://github.com/djungowski/testing-javascript-jsdays17#readme"
+}
