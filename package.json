@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/djungowski/testing-javascript-jsdays17/issues"
   },
-  "homepage": "https://github.com/djungowski/testing-javascript-jsdays17#readme"
+  "homepage": "https://github.com/djungowski/testing-javascript-jsdays17#readme",
+  "dependencies": {
+    "jasmine": "^2.5.3",
+    "jasmine-ajax": "^3.3.1",
+    "jasmine-supertest": "^1.0.0",
+    "karma": "^1.5.0",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "mockery": "^2.0.0",
+    "supertest": "^3.0.0"
+  }
 }
