@@ -3,7 +3,7 @@
 Folgendes Formular:
 ```
 <input type="text" name="Name">
-<button id="submit-name" type="submit">Ausgeben</form>
+<button id="submit-name" type="submit">Ausgeben</button>
 ```
 
 Folgendes Element:

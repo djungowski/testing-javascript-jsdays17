@@ -37,9 +37,13 @@ describe('Dom Test suite', () => {
 
   describe('loadText', () => {
     it('loads a text from a server', () => {
+      const name = 'Bernd Stromberg';
+      const responseText = {
+        text: name
+      };
       const httpResponse = {
         status: 200,
-        responseText: '{"text":"Bernd Stromberg"}'
+        responseText: JSON.stringify(responseText)
       };
 
       jasmine.getFixtures().load('dom.spec.html');
@@ -54,7 +58,7 @@ describe('Dom Test suite', () => {
 
       jasmine.Ajax.uninstall();
 
-      expect($('#text-switch')).toHaveText('Bernd Stromberg');
+      expect($('#text-switch')).toHaveText(name);
     });
   });
 });
