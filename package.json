@@ -16,22 +16,22 @@
     "url": "https://github.com/djungowski/testing-javascript-jsdays17/issues"
   },
   "homepage": "https://github.com/djungowski/testing-javascript-jsdays17#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "expect.js": "^0.3.1",
     "jasmine": "^2.5.3",
-    "jasmine-core": "^2.5.2",
     "jasmine-ajax": "^3.3.1",
+    "jasmine-core": "^2.5.2",
     "jasmine-supertest": "^1.0.0",
     "karma": "^1.5.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-coverage": "^1.1.1",
     "karma-jasmine": "^1.1.0",
     "karma-junit-reporter": "^1.2.0",
+    "karma-mocha-reporter": "^2.2.2",
     "karma-phantomjs-launcher": "^1.0.4",
     "mocha": "^3.2.0",
     "mockery": "^2.0.0",
-    "supertest": "^3.0.0",
-    "expect.js": "^0.3.1"
-	}
+    "supertest": "^3.0.0"
+  }
 }
