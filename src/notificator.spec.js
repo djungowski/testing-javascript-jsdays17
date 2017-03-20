@@ -16,6 +16,7 @@ describe('Notificator Test Suite', () => {
 
       expect(Date).toHaveBeenCalled();
       expect(window.alert).toHaveBeenCalledWith(expectedString);
+      expect(window.alert).toHaveBeenCalledTimes(1);
 
       Date = originalDate;
     });
