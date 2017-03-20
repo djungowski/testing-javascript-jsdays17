@@ -11,3 +11,6 @@ Zeit über window.alert wieder aus.
 ## Wegmocken / DI
 Date()
 window.alert
+
+## Aufgabe 2
+Kopiere den notify Testcase und schreibe ihn so um, dass `jasmine.clock().mockDate(baseTime);` verwendet wird.

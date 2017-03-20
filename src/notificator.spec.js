@@ -20,6 +20,25 @@ describe('Notificator Test Suite', () => {
 
       Date = originalDate;
     });
+
+    it('notifies with the current date using jasmine clock', () => {
+      jasmine.clock().install();
+
+      const date = new Date(2013, 9, 23);
+      jasmine.clock().mockDate(date);
+
+      spyOn(window, 'alert');
+      const notificator = new Notificator();
+      const string = 'Hello';
+      const expectedString = `[${date}] ${string}`;
+
+      notificator.notify(string);
+      //gleich zu const expectedString = '[' + date + '] ' + string;
+      expect(window.alert).toHaveBeenCalledWith(expectedString);
+      expect(window.alert).toHaveBeenCalledTimes(1);
+
+      jasmine.clock().uninstall();
+    });
   });
 
   describe('notifyIfNotNumber()', () => {
