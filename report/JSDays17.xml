@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Calculator Test Suite" timestamp="2017-03-20T16:59:55" hostname="localhost" time="0.012" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Calculator Test Suite" name="can be instantiated" time="0.003" />
+ </testsuite>
+ <testsuite name="Calculator Test Suite.multiply()" timestamp="2017-03-20T16:59:55" hostname="localhost" time="0.008" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Calculator Test Suite.multiply()" name="multiplies two numbers" time="0.005" />
+ </testsuite>
+ <testsuite name="Calculator Test Suite.add()" timestamp="2017-03-20T16:59:55" hostname="localhost" time="0.001" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Calculator Test Suite.add()" name="adds two numbers" time="0.001" />
+ </testsuite>
+ <testsuite name="filesystem test suite" timestamp="2017-03-20T16:59:55" hostname="localhost" time="0.003" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="filesystem test suite" name="reads the package.json" time="0.003" />
+ </testsuite>
+</testsuites>

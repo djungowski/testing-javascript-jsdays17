@@ -23,6 +23,7 @@
     "jasmine-ajax": "^3.3.1",
     "jasmine-core": "^2.5.2",
     "jasmine-jquery": "^2.1.1",
+    "jasmine-reporters": "^2.2.1",
     "jasmine-supertest": "^1.0.0",
     "jquery": "^3.2.0",
     "karma": "^1.5.0",
