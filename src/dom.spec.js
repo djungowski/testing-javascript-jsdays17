@@ -34,6 +34,29 @@ describe('Dom Test suite', () => {
       expect($('#text-switch')).toHaveText(text);
     });
   });
+
+  describe('loadText', () => {
+    it('loads a text from a server', () => {
+      const httpResponse = {
+        status: 200,
+        responseText: '{"text":"Bernd Stromberg"}'
+      };
+
+      jasmine.getFixtures().load('dom.spec.html');
+      jasmine.Ajax.install();
+
+      const url = '/api/switch/info';
+      const dom = new Dom();
+
+      dom.loadText(url);
+      const request = jasmine.Ajax.requests.mostRecent();
+      request.respondWith(httpResponse);
+
+      jasmine.Ajax.uninstall();
+
+      expect($('#text-switch')).toHaveText('Bernd Stromberg');
+    });
+  });
 });
 
 

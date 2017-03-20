@@ -12,11 +12,11 @@ module.exports = function(config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine'],
 
-
     // list of files / patterns to load in the browser
     files: [
       'node_modules/jquery/dist/jquery.js',
       'node_modules/jasmine-jquery/lib/jasmine-jquery.js',
+      'node_modules/jasmine-ajax/lib/mock-ajax.js',
       'src/**/*.js',
       'src/fixtures/*.html'
     ],
