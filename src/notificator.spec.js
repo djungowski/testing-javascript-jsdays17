@@ -21,4 +21,25 @@ describe('Notificator Test Suite', () => {
       Date = originalDate;
     });
   });
+
+  describe('notifyIfNotNumber()', () => {
+    it('throws if no number is provided', () => {
+      const notificator = new Notificator();
+
+      function throwWrapper() {
+        notificator.notifyIfNotNumber('Bernd das Brot');
+      }
+
+      expect(throwWrapper).toThrowError();
+
+    });
+    
+    it('uses .bind instead of throwWrapper', () => {
+      const notificator = new Notificator();
+      
+      const throwWrapper = notificator.notifyIfNotNumber.bind(notificator, 'Bernd das Brot');
+      
+      expect(throwWrapper).toThrowError('"Bernd das Brot" is not a number');
+    });
+  });
 });
